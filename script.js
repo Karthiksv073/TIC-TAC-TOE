@@ -10,6 +10,15 @@ let winning_pattern=[[0,1,2],[3,4,5],[6,7,8],
 boxes.forEach((box)=>{
     box.addEventListener('click',()=>{
         box.innerText=turn?'X':'O';
+        if(box.innerText=='X'){
+
+            box.classList.remove("class_o");
+            box.classList.add("class_x");
+        }
+        else{
+            box.classList.remove("class_x");
+            box.classList.add("class_o");
+        }
         box.disabled=true;
         turn=!turn;
         checkWinner();
