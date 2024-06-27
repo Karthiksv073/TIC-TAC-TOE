@@ -24,6 +24,9 @@ const checkWinner=()=>{
             if(a==b&&b==c){
                 win_para.innerText=turn?"Player 1":"Player 2";
                 message_box.style.display = 'inline-block';
+                for(let i of boxes){
+                    i.disabled=true;
+                }
                 console.log("winner");
                 }
             }
