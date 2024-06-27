@@ -61,7 +61,7 @@ h3{
     height:10vmin;
     border-bottom-left-radius:15vmin;
     border-bottom-right-radius:15vmin;
-    display:inline-block;
+    display:none;
 }
 p{
     color:#009DDC;
